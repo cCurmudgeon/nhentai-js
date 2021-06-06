@@ -120,7 +120,7 @@ class Kongou {
         native: response.title.japanese,
         pretty: response.title.pretty,
       },
-      siteURL: `https://nhentai/g/${response.id}`,
+      siteURL: `https://nhentai/g/${parseInt(response.id)}`,
       scanlator: response.scanlator ? response.scanlator : null,
       upload_date: {
         unix: response.upload_date,
